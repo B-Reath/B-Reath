@@ -12,62 +12,112 @@
 
 .banner {
 	position: fixed;
+	background-color:grey;
 	text-align: center;
-	background-color: black;
 	color:yellow;
 	height: 50px;
 	width: 100%;
-	z-index: 1;
+	z-index: 2;
 	opacity:0.7;
+	border-style: inset;
+	border-color:black;
 }
 
-.mainpage {
+#mainpage {
 	display: inline-block;
 	position:fixed;
 	font-size:32px;
 	text-align:center;
-	z-index:2;
-	color:yellow;
-	left:685px;
-	padding-bottom:20px;
-}
-
-.banlink1 {
-	display: inline-block;
-	position:fixed;
-	text-align:left;
 	z-index:3;
-	color:red;
-	padding-top: 12px;
-	padding-left: 20px;
+	color:yellow;
+	left:40%;
+	bottom: 74%;
+	opacity:1;
 }
 
-.banlink2 {
+#mainpage img {
+	height:450px;
+	width:450px;
+}
+
+#mainpageitem{
 	display: inline-block;
 	position:fixed;
-	text-align:left;
-	z-index:2;
-	color:red;
-	padding-top: 12px;
-	padding-left: 480px;
+	font-size:32px;
+	text-align:center;
+	z-index:3;
+	color:yellow;
+	left:40%;
+	bottom:73.5%;
+	opacity:1;
 }
 
-.banlink3 {
-	display: inline-block;
-    position: fixed;
-    top: 12px;
-    left: 1380px;
-	z-index:2;
-	color:red;
+#mainpageitem img {
+	height:450px;
+	width:450px;
 }
 
-.banlink4 {
-	display: inline-block;
+#dropdownbutton {
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+
+#dropdownbutton img {
+	height:18px;
+	width:18px;
+}
+
+.navigation {
     position: fixed;
-    top: 12px;
-    left: 1720px;
-	z-index:2;
-	color:red;
+    display: inline-block;
+	left:0px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color:black;
+    min-width: 160px;
+    z-index: 2;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd}
+
+.navigation:hover .dropdown-content {
+    display: block;
+}
+
+#video-bg-elem {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+	z-index:0;
+}
+
+#button {
+    width: 200px;
+    font-size: 18px;
+	margin-left: 1700px;
+    padding: 15px;
+    border: none;
+    background: #000;
+    color: white;
+    cursor: pointer;
+}
+
+#button:hover {
+    background: #ddd;
+    color: black;
 }
 
 body {
@@ -76,85 +126,124 @@ body {
 }
 
 .section1 {
+	
+	background-size:cover;
 	text-align:left;
-	background-color: grey;
-	height:800px;
+	height:50%;
 	width:auto;
-	padding: 60px;
+	z-index:1;
+	position:relative;
+}
+
+.section1 h5 {
+	color:red;
+	padding-top:5%;
+	text-shadow: 2px 2px 4px #000000;
+	
 }
 
 .text1 {
 	text-align:center;
-	color:white;
-	font-style: italic;
+	color:yellow;
+	font-style: bold;
 	font-size:50;
-	padding-top: 40px;
+	padding-top:200px;
+	text-shadow: 2px 2px 4px #000000;
 }
 
 .thumbs {
 	max-width:400px;
-	padding-left: 650px;
-	padding-top: 20px;
+	padding-top:2%;
+	padding-bottom:2%;
+	padding-left:37%;
 }
 
 .text2 {
 	text-align:center;
-	color: white;
-	font-style: italic;
+	color: yellow;
+	font-style: bold;
 	font-size:50;
-	padding-top: 20px;
+	padding-top: 300px;
+	text-shadow: 2px 2px 4px #000000;
 }
 
 
 .section2 {
 	text-align:left;
-	background-color: grey;
-	height:50px;
+	height:50%;
 	width:auto;
 	padding: 60px;
 	padding-top: 200px;
+	z-index:1;
+	position:relative;
 }
 
-.Brayden {
+.section2 h5 {
+	color:red;
+	padding-top:5%;
+	text-shadow: 2px 2px 4px #000000;
+}
+
+#Brayden {
 	max-width:230px;
 	padding-left:100px;
 	padding-top: 20px;
+	text-shadow: 2px 2px 4px #000000;
 }
 
-.bheader {
-	color:white;
+#bheader {
+	color:aqua;
 	font-size:35px;
 	padding-left:100px;
+	text-shadow: 2px 2px 4px #000000;
 }
 
-.bwork1 {
-	color:white;
+#bwork1 {
+	color:aqua;
 	padding-left:140px;
+	text-shadow: 2px 2px 4px #000000;
 }
 
-.bwork2 {
-	color:white;
+#bwork2 {
+	color:aqua;
 	padding-left:170px;
+	text-shadow: 2px 2px 4px #000000;
 }
 
-.bwork3 {
-	color:white;
+#bwork3 {
+	color:aqua;
 	padding-left:170px;
+	text-shadow: 2px 2px 4px #000000;
 }
 
 .item-sec {
+	background-image:url("warehouse.jpeg");
 	background-color:grey;
 	width: 100%;
 	height:1000px;
 	top: 300px;
+	border-style: solid;
+}
+
+.item-sec2 {
+	background-image:url("warehouse2.jpeg");
+	background-size:cover;
+	background-color:grey;
+	width: 100%;
+	height:1000px;
+	top: 300px;
+	border-style: solid;
+	
 }
 
 .item1{
-	max-width:300px;
-	max-height:300px;
+	max-width:400px;
+	max-height:400px;
 	z-index:2;
-	padding-left: 800px;
-	padding-top:150px;
+	margin-left:750px;
+	margin-top:150px;
+	border:solid;
+	border-color:yellow;
 }
 
 .p-item1 {
@@ -162,14 +251,37 @@ body {
 	font-size:25px;
 	padding-left:550px;
 	padding-top:30px;
+	text-shadow: 2px 2px 4px #000000;
 }
 
 .item2{
-	max-width:300px;
-	max-height:300px;
+	max-width:400px;
+	max-height:400px;
 	z-index:2;
-	padding-left: 800px;
-	padding-top:150px;
+	margin-left:750px;
+	margin-top:150px;
+	border:solid;
+	border-color:yellow;
+}
+
+.item3{
+	max-width:400px;
+	max-height:400px;
+	z-index:2;
+	margin-left:750px;
+	margin-top:150px;
+	border:solid;
+	border-color:blue;
+}
+
+.item4{
+	max-width:400px;
+	max-height:400px;
+	z-index:2;
+	margin-left:750px;
+	margin-top:150px;
+	border:solid;
+	border-color:blue;
 }
 
 .p-item2{
@@ -177,4 +289,5 @@ body {
 	font-size:25px;
 	padding-left:550px;
 	padding-top:30px;
+	text-shadow: 2px 2px 4px #000000;
 }
