@@ -5,36 +5,48 @@
 
 	
 <body>
-	<div class="banner">
+	
+	 <div class="banner">
+		<div class="navigation">
+			<button id="dropdownbutton">
+			<img src="Hamburger.png" alt="Navigation" border="0">
+			</button>
+			<div class="dropdown-content">
+				<a href="item-page.html">Item list</a>
+				<a href="#">Prices</a>
+				<a href="#">Product Info</a>
+				<a href="#">Location</a>
+			</div>
+			<a id="mainpage" href="index.html">
+				<img src="Groupies2.png" alt="Welcome to Groupie's Monitor Warehouse!" border="0">
+			</a>
+		</div>
+		<button id="button" onclick="vPause()">Pause</button>
 	</div>
 	
-
-		
-		<a class="banlink1" href="item-page.html">Item list</a>
-		<a class="banlink2" href="">Prices</a>
-		<a class="mainpage" href="index.html">Welcome to Groupie's Monitor Warehouse!</a>
-		<a class="banlink3" href="">Product info</a>
-		<a class="banlink4" href="">Where can you find us?</a>
+	<video autoplay muted loop id="video-bg-elem">
+	  <source src="guyWorking.mp4" type="video/mp4">Video not supported.
+	</video>
 
 		
 	<div class="section1">
 		<h5 class="heading"> What is Groupie's Monitor Warehouse? </h5>
 		<p class="text1"> Groupie's Monitor Warehouse is your source for competitively priced monitors, and other computer needs! </p>
-		<img class="thumbs" src="Men-Pointing-Thumbs-Up-Royalty-Free-PNG-Image.png" alt= "Guy giving a thumbs up.">
-		<p class= "text2"> We offer prices that our competition will not beat.  We check prices daily to ensure you are getting the best deals on your computer needs. </p>
+		<p class= "text2"> We offer prices that our competition will not beat.  We check prices daily to ensure you are getting the best deals for your computer needs. </p>
 	</div>
 		
 	<div class="section2">
 		<h5 class="heading"> Who works for Groupie's Monitor Warehouse?</h5>
+		<img id="Brayden" src="Brayden.jpg" alt="Brayden">
+		<h1 id="bheader"> Brayden Reath </h1>
+		<h3 id="bwork1"> What I worked on:</h3>
+		<h3 id="bwork2"> - Index page</h3>
+		<h3 id="bwork3"> - Items list</h3>
 	</div>
-		<img class="Brayden" src="Brayden.jpg" alt="Brayden">
-		<h1 class="bheader"> Brayden Reath </h1>
-		<h3 class="bwork1"> What I worked on:</h3>
-		<h3 class="bwork2"> - Index page</h3>
-		<h3 class="bwork3"> - Items list</h3>
-		
-		
 
+		
+		
+	<script src="java.js"></script>
 		
 </body>
 </html>
