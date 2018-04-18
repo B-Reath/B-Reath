@@ -2,7 +2,7 @@
 	<link rel="stylesheet" type="text/css" href="styles.css">
 	<title> Groupie's - Item list </title>
 
-<body>
+<body id="item-page">
 	<div class="banner">
 		<div class="navigation">
 			<button id="dropdownbutton">
@@ -21,22 +21,36 @@
 	</div>
 	
 		
-		<div>
-			<div class="item-sec">
-				<img class="item1" src="Monitor 1.jpeg" alt="Monitor">
-				<p class="p-item1"> This is the text for the first image, it will also have a hyperlink in here as well.</p>
-				<img class="item2" src="Mac.jpeg" alt="Monitor">
-				<p class="p-item2"> This is the text for the second image, it will also have a hyperlink in here as well.</p>
-			</div>
+
+	<div class="item-sec">
+		<img class="item1" src="Monitor 1.jpeg" alt="Monitor">
+		<p class="p-item1"> This is the gamers bundle. This bundle includes;<br>
+		- Two 120hz monitors of your choice.<br>
+		- Mouse and keyboard combo set.<br>
+		</p>
+		<img class="item2" src="Mac.jpeg" alt="Monitor">
+		<p class="p-item2"> This is our All-in-One MAC. Perfect for artists.</p>
+	</div>
 		
-			<div class="item-sec2">
-				<img class="item3" src="Monitor3.jpeg" alt="Monitor">
-				<p class="p-item1"> This is the text for the third image, it will also have a hyperlink in here as well.</p>
-				<img class="item4" src="laptop.jpeg" alt="Monitor">
-				<p class="p-item2"> This is the text for the fourth image, it will also have a hyperlink in here as well.</p>
-			</div>
-		</div>
-			
+	<div class="item-sec2">
+		<img class="item3" src="Monitor3.jpeg" alt="Monitor">
+		<p class="p-item1">Our wireless monitor, keyboard and mouse set also comes with a Charizard action figure.</p>
+		<img class="item4" src="laptop.jpeg" alt="Monitor">
+		<p class="p-item2"> This Doors-book-limited features a GTX 1080 and an Intel 7700k Processor. Perfect for gaming!</p>
+	</div>
+
+	<div class="item-sec3">
+		<h5 class="heading"> Would you like to suggest new products? Leave us your name and E-mail!</h5>
+		<form action="https://formspree.io/your@email.com" method="POST">
+			First name:<br>
+				<input type="text" name="firstname" value="Input first name here.">
+				<br>
+			E-mail address:<br>
+				<input type="text" name="email" value="Input email address here.">
+				<br>
+				<br>
+				<input type="submit" value="send">
+		</form> 
 	
 
 </html>
