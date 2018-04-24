@@ -3,13 +3,28 @@
 	padding: 0;
 }
 
+body {
+	background-color: grey;
+}
+
+#homepage {
+	height:2000px;
+	width:100%;
+}
+
+#item-page {
+	height:2000px;
+	width:100%;
+}
+/* This is the mainpage CSS. */
+
 .heading{
 	font-size: 60px;
 	color: black;
 	text-align:center;
 }
 
-
+/* This is what I'm using to make my upper banner. */
 .banner {
 	position: fixed;
 	background-color:grey;
@@ -25,42 +40,41 @@
 
 #mainpage {
 	display: inline-block;
-	position:fixed;
+	position:absolute;
 	font-size:32px;
 	text-align:center;
 	z-index:3;
 	color:yellow;
 	left:40%;
-	bottom: 74%;
 	opacity:1;
 }
 
 #mainpage img {
-	height:450px;
-	width:450px;
+	height:50px;
+	width:400px;
 }
 
 #mainpageitem{
 	display: inline-block;
-	position:fixed;
+	position:absolute;
 	font-size:32px;
 	text-align:center;
 	z-index:3;
 	color:yellow;
 	left:40%;
-	bottom:73.5%;
 	opacity:1;
 }
 
 #mainpageitem img {
-	height:450px;
-	width:450px;
+	height:50px;
+	width:400px;
 }
-
+/* This is my Nav menu */
 #dropdownbutton {
     padding: 16px;
     font-size: 16px;
     border: none;
+	
 }
 
 #dropdownbutton img {
@@ -95,6 +109,8 @@
     display: block;
 }
 
+/* This is my video background */
+
 #video-bg-elem {
     position: fixed;
     right: 0;
@@ -120,16 +136,12 @@
     color: black;
 }
 
-body {
-	background-color: grey;
-	height: 2000px;
-}
 
 .section1 {
 	
 	background-size:cover;
 	text-align:left;
-	height:50%;
+	height:33%;
 	width:auto;
 	z-index:1;
 	position:relative;
@@ -170,10 +182,10 @@ body {
 
 .section2 {
 	text-align:left;
-	height:50%;
+	height:33%;
 	width:auto;
 	padding: 60px;
-	padding-top: 200px;
+	top: 200px;
 	z-index:1;
 	position:relative;
 }
@@ -184,37 +196,58 @@ body {
 	text-shadow: 2px 2px 4px #000000;
 }
 
+/* This is my second section, and contains what everyone did. */
+
 #Brayden {
-	max-width:230px;
+	max-width:300px;
 	padding-left:100px;
 	padding-top: 20px;
 	text-shadow: 2px 2px 4px #000000;
 }
 
-#bheader {
-	color:aqua;
-	font-size:35px;
-	padding-left:100px;
+#bray-p {
+	color:yellow;
+	font-size:30px;
+	margin-left:8.5%;
+	font-style:bold;
+	font-family:Arial;
 	text-shadow: 2px 2px 4px #000000;
 }
 
-#bwork1 {
-	color:aqua;
-	padding-left:140px;
+.section3 {
+	text-align:left;
+	height:33%;
+	width:auto;
+	padding: 60px;
+	top: 300px;
+	z-index:1;
+	position:relative;
+}
+
+.section3 h5 {
+	color:red;
+	padding-top:5%;
 	text-shadow: 2px 2px 4px #000000;
 }
 
-#bwork2 {
-	color:aqua;
-	padding-left:170px;
+table {
+	color:yellow;
+	font-size:30px;
+	text-shadow: 2px 2px 4px #000000;
+	margin-left:40%;
+	z-index:3;
+}
+
+table th{
+	color:white;
 	text-shadow: 2px 2px 4px #000000;
 }
 
-#bwork3 {
-	color:aqua;
-	padding-left:170px;
-	text-shadow: 2px 2px 4px #000000;
+th, td {
+    padding: 15px;
 }
+
+/* This is the items page CSS. */
 
 .item-sec {
 	background-image:url("warehouse.jpeg");
@@ -226,14 +259,13 @@ body {
 }
 
 .item-sec2 {
-	background-image:url("warehouse2.jpeg");
+	background-image:url("office.jpeg");
 	background-size:cover;
 	background-color:grey;
 	width: 100%;
 	height:1000px;
 	top: 300px;
 	border-style: solid;
-	
 }
 
 .item1{
@@ -247,11 +279,14 @@ body {
 }
 
 .p-item1 {
+	width:500px;
+	background-color:grey;
+	margin-top:20px;
+	margin-left:38%;
 	color:white;
 	font-size:25px;
-	padding-left:550px;
-	padding-top:30px;
 	text-shadow: 2px 2px 4px #000000;
+	border-style: dotted;
 }
 
 .item2{
@@ -259,7 +294,7 @@ body {
 	max-height:400px;
 	z-index:2;
 	margin-left:750px;
-	margin-top:150px;
+	margin-top:100px;
 	border:solid;
 	border-color:yellow;
 }
@@ -285,9 +320,32 @@ body {
 }
 
 .p-item2{
+	width:500px;
+	background-color:grey;
+	margin-top:20px;
+	margin-left:38%;
 	color:white;
 	font-size:25px;
-	padding-left:550px;
-	padding-top:30px;
 	text-shadow: 2px 2px 4px #000000;
+	border-style: dotted;
+}
+
+.item-sec3 {
+	background-color:grey;
+	width: 100%;
+	height:500px;
+	top: 300px;
+	border-style: solid;	
+}
+
+form {
+	margin-top:5%;
+	margin-left:0%;
+	text-align:center;
+	font-size:30;
+}
+
+input {
+		width:30%;
+		font-size:25;
 }
